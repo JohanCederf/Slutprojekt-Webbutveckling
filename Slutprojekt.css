@@ -1,0 +1,161 @@
+
+body{
+    background-color: #001111;
+    margin: 15px;
+    padding: 5px;
+}
+
+.Header { grid-area: header; }
+.Navbar { grid-area: nav;}
+.LokalNavbar { grid-area: Lokalnav; }
+.Main { grid-area: main; }
+.Aside { grid-area: right; }
+.Footer { grid-area: footer; }
+
+
+/*Tre spalts layout*/
+.grid-container-tre {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'nav    nav     nav    nav   nav   nav'
+    'Lokalnav  main main  main  right right'
+    'footer footer footer footer footer footer';
+  grid-gap: 4px;
+  background-color: #5f6d84;
+  grid-template-rows: 80px auto 600px 80px;
+  grid-template-columns: 150px 600px auto;
+  padding: 8px;
+}
+
+
+/*Två spalts layout*/
+.grid-container.två {
+    display: grid;
+    grid-template-areas:
+      'header header header header header header'
+      'nav    nav     nav    nav   nav   nav'
+      'main  main  main  main  right right'
+      'footer footer footer footer footer footer';
+    grid-gap: 4px;
+    background-color: #000000;
+    grid-template-rows: 80px auto 400px 80px;
+    padding: 10px;
+}
+
+/*Ta bort... ev färg samt storlek*/
+.grid-container-tre > nav, header, footer, aside, main {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 0;
+  font-size: 30px;
+}
+
+/*
+.grid-container-två > nav, header, footer, aside, main {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 0;
+    font-size: 30px;
+} */
+
+/*gör navbaren synlig i griden*/
+.Navbar ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0px;
+    padding: 0px;
+}
+
+.Navbar {
+    padding: 0px;
+}
+
+article {
+    height: auto;
+}
+
+/*Lägg/ändra in höjd, färg, m.m*/
+main{
+    height: auto;
+    background-color: #003D4D;
+}
+header{
+    height: auto;
+    background-color: #3399FF;
+}
+footer{
+    height: auto;
+    background-color: #201E6F;
+}
+nav{
+    height: auto;
+    background-color: #00CCFF;
+}
+aside{
+    height: auto;
+    background-color: #6D95FA;
+}
+
+
+.Header h3{
+    display: grid;
+    margin: 20px;
+}
+
+
+
+
+
+
+
+/*Menyn till alla*/
+a {
+	display: block;
+	text-decoration: none;
+	color: hsl(0, 0%, 100%);
+	padding: 5px;
+}
+nav ul {
+	list-style: none;
+	overflow: hidden;
+	white-space: nowrap;
+	background-color: rgb(51, 51, 51);
+	padding: 0;
+    margin: 0;
+}
+li {
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	text-align: center;
+}
+
+.active {
+	background-color: rgb(109, 95, 95);
+}
+li a:hover:not(.active) {
+	background-color: #111111;
+}
+li a:focus {
+	background-color: #ff2211;
+}
+li a {
+	padding: 14px 16px;
+}
+
+nav#vertikal{
+    width: auto;
+    height: auto;
+}
+li.VertikalNavbar{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: block;
+    font-size: 1rem;
+    
+}
+nav#vertikal ul{
+    height: 100%;
+}

@@ -1,4 +1,6 @@
-
+*{
+    color: hsl(0, 0%, 100%);
+}
 body{
     background-color: #001111;
     margin: 15px;
@@ -23,7 +25,7 @@ body{
     'footer footer footer footer footer footer';
   grid-gap: 4px;
   background-color: #5f6d84;
-  grid-template-rows: 80px auto 600px 80px;
+  grid-template-rows: 80px auto 600px 100px;
   grid-template-columns: 150px 600px auto;
   padding: 8px;
 }
@@ -39,7 +41,7 @@ body{
       'footer footer footer footer footer footer';
     grid-gap: 4px;
     background-color: #000000;
-    grid-template-rows: 80px auto 400px 80px;
+    grid-template-rows: 80px auto 400px 100px;
     padding: 10px;
 }
 
@@ -158,4 +160,15 @@ li.VertikalNavbar{
 }
 nav#vertikal ul{
     height: 100%;
+}
+
+/*Footer*/
+.Footer{
+	display:grid;
+}
+tr.Rubrik{
+	font-size: 22px;
+}
+tr.Undertext{
+	font-size: 18px;
 }

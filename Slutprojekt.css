@@ -32,7 +32,7 @@ body{
 
 
 /*Två spalts layout*/
-.grid-container.två {
+.grid-container-två {
     display: grid;
     grid-template-areas:
       'header header header header header header'
@@ -107,10 +107,52 @@ aside{
 
 
 
+/*Hollow Knight Page*/
+video.HollowKnight{
+    display:grid;
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+    height: 400px;
+    width: 600px;
+}
+
+/*Darkest Dungeon Page*/
+
+
+/*Trainsitor Page*/
+audio.Transistor{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+
+/*Ev add all video and distrack under same place....*/
 
 
 
 
+
+/*Tabell spel*/
+table.Round{
+    border-radius: 28px;
+    background-color: hsl(167, 81%, 29%);
+    margin-left: auto;
+    margin-right: auto;
+}
+table, th, td{
+    border: solid;
+    border-width: 2px;
+    border-collapse: separate;
+    margin: 5px;
+    padding: 5px;
+}
+th, td {
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+}
 
 /*Topplista*/
 img, ol.Topplista{
@@ -136,17 +178,14 @@ ol li{
     text-align: left;
 }
 
-
-
-
-
 /*Reklam*/
 img.reklam{
     height: 200px;
     width: 250px;
     margin-bottom: 200px;
 }
-/*Menyn till alla*/
+
+/*Huvudmeny till alla*/
 a {
 	display: block;
 	text-decoration: none;
@@ -167,7 +206,6 @@ ul li {
 	display: inline-block;
 	text-align: center;
 }
-
 .active {
 	background-color: rgb(109, 95, 95);
 }
@@ -181,6 +219,7 @@ li a {
 	padding: 14px 16px;
 }
 
+/*Lokal meny*/
 nav#vertikal{
     width: auto;
     height: auto;
@@ -201,9 +240,15 @@ nav#vertikal ul{
 .Footer{
 	display:grid;
 }
-tr.Rubrik{
+tr.Rubrik th{
 	font-size: 22px;
 }
-tr.Undertext{
+tr.Undertext td{
 	font-size: 18px;
+}
+table.noBorder, tr.Rubrik th, tr.Undertext td{
+    border: none;
+    margin: 0;
+    padding: 0;
+    
 }

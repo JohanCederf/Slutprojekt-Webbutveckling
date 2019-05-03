@@ -32,6 +32,7 @@ body{
 
 
 /*Två spalts layout*/
+/*
 .grid-container-två {
     display: grid;
     grid-template-areas:
@@ -44,7 +45,7 @@ body{
     grid-template-rows: 80px auto 400px 100px;
     padding: 10px;
 }
-
+*/
 /*Ta bort... ev färg samt storlek*/
 .grid-container-tre > nav, header, footer, aside, main {
   background-color: rgba(255, 255, 255, 0.8);
@@ -107,8 +108,8 @@ aside{
 
 
 
-/*Hollow Knight Page*/
-video.HollowKnight{
+/*Games video/audio*/
+video{
     display:grid;
     margin-left: auto;
     margin-right: auto;
@@ -117,11 +118,7 @@ video.HollowKnight{
     width: 600px;
 }
 
-/*Darkest Dungeon Page*/
-
-
-/*Trainsitor Page*/
-audio.Transistor{
+audio{
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -152,6 +149,12 @@ th, td {
     text-align: center;
     font-size: 20px;
     padding: 10px;
+}
+table#t01 tr:nth-child(odd){
+    background-color: #009b2c;
+}
+table#t01 tr:nth-child(even){
+    background-color: #2a8c45;
 }
 
 /*Topplista*/

@@ -7,6 +7,7 @@ body{
     padding: 5px;
 }
 
+/*Templet area*/
 .Header { grid-area: header; }
 .Navbar { grid-area: nav;}
 .LokalNavbar { grid-area: Lokalnav; }
@@ -32,7 +33,6 @@ body{
 
 
 /*Två spalts layout*/
-/*
 .grid-container-två {
     display: grid;
     grid-template-areas:
@@ -41,26 +41,26 @@ body{
       'main  main  main  main  right right'
       'footer footer footer footer footer footer';
     grid-gap: 4px;
-    background-color: #000000;
-    grid-template-rows: 80px auto 400px 100px;
+    background-color: #5f6d84;
+    grid-template-rows: 80px auto auto 100px;
+    grid-template-columns: auto;
     padding: 10px;
 }
-*/
-/*Ta bort... ev färg samt storlek*/
+
+/*Ta bort... ev storlek*/
+
+/*Läger upp en bas för innehållet*/
 .grid-container-tre > nav, header, footer, aside, main {
-  background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
   padding: 0;
   font-size: 30px;
 }
-
-/*
 .grid-container-två > nav, header, footer, aside, main {
-    background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
     padding: 0;
     font-size: 30px;
-} */
+}
+
 
 /*gör navbaren synlig i griden*/
 .Navbar ul{
@@ -79,6 +79,7 @@ article {
 }
 
 /*Lägg/ändra in höjd, färg, m.m*/
+/*Varje indelad sektion bakgrundsärg, fixat anpassad höjd*/
 main{
     height: auto;
     background-color: #003D4D;
@@ -93,7 +94,6 @@ footer{
 }
 nav{
     height: auto;
-    background-color: #00CCFF;
 }
 aside{
     height: auto;
@@ -125,7 +125,7 @@ audio{
 }
 
 
-/*Ev add all video and distrack under same place....*/
+/*Ev add all video and Soundtrack under same place....*/
 
 
 
@@ -253,5 +253,4 @@ table.noBorder, tr.Rubrik th, tr.Undertext td{
     border: none;
     margin: 0;
     padding: 0;
-    
 }

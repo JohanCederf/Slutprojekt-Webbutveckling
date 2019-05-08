@@ -99,6 +99,10 @@ aside{
     height: auto;
     background-color: #6D95FA;
 }
+div{
+    display:grid;
+    margin-bottom: 210px;
+}
 
 .Header h3{
     display: grid;
@@ -107,6 +111,7 @@ aside{
 
 
 
+/*Ev add all video and Soundtrack under same place....*/
 
 /*Games video/audio*/
 video{
@@ -125,13 +130,42 @@ audio{
 }
 
 
-/*Ev add all video and Soundtrack under same place....*/
+/*Animation*/
+div.Animation{
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #adb;
+    position: relative;
+    -webkit-animation-name: example;
+    -webkit-animation-duration: 6s;
+    animation-name: example;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+@keyframes example{
+    0%{background-color: #adb; left: 0px; top:0px;}
+    25%{background-color: #cad; left: 200px; top: 0px;}
+    50%{background-color: #dac; left: 200px; top: 200px;}
+    75%{background-color: #dca; left: 0px; top: 200px;}
+    100%{background-color: #adb; left: 0px; top: 0px;}
+}
+
+
 
 
 
 
 
 /*Tabell spel*/
+table.Collapse{
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: hsl(167, 81%, 29%);
+    margin-bottom: 20px;
+}
 table.Round{
     border-radius: 28px;
     background-color: hsl(167, 81%, 29%);
@@ -161,24 +195,24 @@ table#t01 tr:nth-child(even){
 img, ol.Topplista{
     display: grid;
 }
+img {
+    height: 350px;
+    width: 600px;
+}
 ol.Topplista{
     color: rgb(255, 250, 250);
 	list-style-type: upper-roman;
 	list-style-position: inside;
 }
-.largerText {
-	font-size: 23px;
-	color: #EEEEEE;
-}
-img {
-    height: 350px;
-    width: 600px;
+ol li{
+    text-align: left;
 }
 .None{
     list-style-type: none;
 }
-ol li{
-    text-align: left;
+.largerText {
+	font-size: 23px;
+	color: #EEEEEE;
 }
 
 /*Reklam*/
@@ -186,6 +220,13 @@ img.reklam{
     height: 200px;
     width: 250px;
     margin-bottom: 200px;
+}
+img.Reklame{
+    height: 250;
+    width: 400px;
+}
+img.distance{
+    margin-bottom: 100px;
 }
 
 /*Huvudmeny till alla*/

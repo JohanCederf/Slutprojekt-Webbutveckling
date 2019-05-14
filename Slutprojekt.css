@@ -158,6 +158,20 @@ div.Animation{
 
 
 
+/*Formulär*/
+form{
+text-align: left;
+font-size: 17px;
+color: #000000;
+}
+legend.störreText, label.störreText{
+    font-size: 32px;
+}
+input, textarea, select{
+    color: #000000;
+}
+
+
 /*Tabell spel*/
 table.Collapse{
     border-collapse: collapse;

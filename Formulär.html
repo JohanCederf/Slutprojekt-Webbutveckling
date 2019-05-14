@@ -21,19 +21,65 @@
             </ul>
         </nav>
         <main class="Main">
-            <!--Kort info?!?, Ska ändå had ett formulär-->
             <article>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem distinctio dolorem ex, laudantium velit modi.
                 Inventore id unde incidunt molestias pariatur, beatae nobis distinctio excepturi eaque officia qui similique aut!</p>
             </article>
 
             <!--Formulär-->
-            <form action=""></form>
+            <form action="/action_page.php">
+                <fieldset>
+                    <legend class="störreText">Personalia:</legend>
+                    <!--kommer börja automatisk på detta fältet när man går in på sidan-->
+                    <label for="Namn">Namn</label> <input type="text" name="Name" autofocus><br>
+                    <!--Är tvingad att fylla i detta fält samt visar ett exempel på hur Emailen kan se ut-->
+                    <label for="Email">Email</label> <input type="email" name="Email" required placeholder="example.extern@gmail.com"><br>
+                    <!--begränsa använding av tecken-->
+                    <label for="Password">Lösenord</label> <input type="password" name="Password" pattern="[A-Za-z]{3}" title="Three letter country code"><br>
+                    <label for="Birth">Date of Birth</label> <input type="text" name="Birth"><br>
+
+                    <!--Välj ett av alternativen-->
+                    <label for="Kön" class="störreText">Kön:</label><br>
+                    <input type="radio" name="kön" value="Man"><label for="kön">Man</label><br>
+                    <input type="radio" name="kön" value="Kvinna"><label for="kön">Kvinna</label><br>
+                    <input type="radio" name="kön" value="Något annat"><label for="kön">Något annat</label><br>
+                    
+                    <!--Möjliheten att välja flera alternativ-->
+                    <label for="Games" class="störreText">Vilka spel spelar/ har du spelat</label><br> 
+                    <input type="checkbox" name="Games"> <label for="Games">League of Legends</label><br>
+                    <input type="checkbox" name="Games"> <label for="Games">Overwatch</label><br>
+                    <input type="checkbox" name="Games"> <label for="Games">Terraria</label><br>
+                    <input type="checkbox" name="Games"> <label for="Games">Minecraft</label><br>
+
+                    <!--Välja ett av alternativen-->
+                    <label for="Spelar" class="störreText">Hur länge spelar du per dag?</label><br>
+                    <select name="Spelar">
+                        <option value="0h">0h</option>
+                        <option value="2h">2h</option>
+                        <option value="4h">4h</option>
+                        <option value="6h">6h</option>
+                        <option value="8h">8h</option>
+                        <option value="10h">10h</option>
+                    </select><br><br><br>
+
+                    <!--Går ej att ändra innehållet-->
+                    <label for="Kort info" class="störreText">Kort info</label><br>
+                    <textarea name="Kort info" cols="20" rows="10" readonly>YAYEET om du klickar här kommer all din information hamna i cyberrymden WOWOAOOAW.</textarea><br>
+
+                    <label for="favcolor">Select your favorite color:</label> <input type="color" name="favcolor" value="#ff0000"><br>
+                    <label for="Points">Rate</label> <input type="number" name="points" step="2"><br><br><br>
+                    
+                    <input type="submit" value="Send" name="Send">
+                </fieldset>
+            </form>
         </main>
         
 
-        <!--En till formulär?!?-->
-        <aside class="Aside">Right</aside>
+        <!--Reklam-->
+        <aside class="Aside">
+            <img src="Reklam4.jpg" alt="Idle Heroes" class="Reklame distance">
+            <img src="Reklam3.jpg" alt="LG G6" class="Reklame">
+        </aside>
 
         <!--Footer-->
         <footer class="Footer">

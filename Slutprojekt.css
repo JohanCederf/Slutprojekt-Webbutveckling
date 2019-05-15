@@ -78,6 +78,9 @@ article {
     height: auto;
 }
 
+
+
+
 /*Lägg/ändra in höjd, färg, m.m*/
 /*Varje indelad sektion bakgrundsärg, fixat anpassad höjd*/
 main{
@@ -109,6 +112,21 @@ div{
     margin: 20px;
 }
 
+p.space{
+    line-height: 2em;
+    vertical-align: auto;
+}
+p.Info{
+    font-size: 1ex;
+    vertical-align: auto;
+}
+h2.Large{
+    font-size: 10vmin;
+}
+
+
+
+
 
 
 /*Ev add all video and Soundtrack under same place....*/
@@ -129,6 +147,10 @@ audio{
     display: block;
 }
 
+iframe{
+    width:500px;
+    height: 250px;
+}
 
 /*Animation*/
 div.Animation{
@@ -152,8 +174,18 @@ div.Animation{
     100%{background-color: #adb; left: 0px; top: 0px;}
 }
 
-
-
+/*Transistion*/
+div.Transistion{
+    width: 100px;
+    height: 100px;
+    background: rgb(43,221,201);
+    -webkit-transition: width 4s;
+    transition: width 4s;
+    margin-left: 100px;
+}
+div.Transistion:hover{
+    width: 400px;
+}
 
 
 
@@ -162,7 +194,7 @@ div.Animation{
 form{
 text-align: left;
 font-size: 17px;
-color: #000000;
+color: black;
 }
 legend.störreText, label.störreText{
     font-size: 32px;
@@ -199,10 +231,17 @@ th, td {
     padding: 10px;
 }
 table#t01 tr:nth-child(odd){
-    background-color: #009b2c;
+    background-color: rgba(0, 155, 44, 0.6);
 }
 table#t01 tr:nth-child(even){
-    background-color: #2a8c45;
+    background-color: hsla(137, 54%, 36%, 0.7);
+}
+
+
+/*Deskription list*/
+dl{
+    text-align: left;
+    margin-left: 100px;
 }
 
 /*Topplista*/

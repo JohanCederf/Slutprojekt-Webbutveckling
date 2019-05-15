@@ -9,10 +9,10 @@
 </head>
 <body>
     <div class="grid-container-två">
-        <header class="Header">
+        <header class="Header" role="Banner">
             <h3>About</h3>
         </header>
-        <nav class="Navbar"> 
+        <nav class="Navbar" role="Navigation"> 
             <ul>
                 <li><a href="Home.html">Home</a></li>
                 <li><a href="Spel.html">Spel</a></li>
@@ -20,7 +20,7 @@
                 <li><a href="About.html" class="active">About</a></li>
             </ul>
         </nav>
-        <main class="Main">
+        <main class="Main" role="Huvudinnehåll">
             <article>
                 <h2>Om sidan</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem distinctio dolorem ex, laudantium velit modi.
@@ -31,7 +31,7 @@
                     Sit ducimus minima sint, maiores quos iusto libero autem qui alias! Ipsam vitae est ipsa sunt officiis earum
                     consequatur minus deleniti, harum nobis cupiditate reiciendis illum suscipit. Aliquam, expedita voluptatum.
                 </p>
-                <p>
+                <p class="space">
                     Architecto quod labore officiis illum, repudiandae voluptatem repellat tempora harum consequatur dolorem! 
                     Eum totam dolores nisi iste iusto eaque nobis, consequatur rem nihil quos ut fugit ullam aperiam aliquam nesciunt?
                     Consectetur architecto alias quisquam facere magnam illo nam expedita modi quasi aut repellendus recusandae,
@@ -39,20 +39,22 @@
                 </p>
 
                 <!--Animation, gradient etc.. -->
+                <div class="Transistion"></div>
+
                 <div class="Animation"></div>
 
 
             </article> 
         </main>
         
-        <!--Reklam ... annan info-->
-        <aside class="Aside">
+        <!--Reklam-->
+        <aside class="Aside" role="Reklam">
             <img src="Reklam4.jpg" alt="Idle Heroes" class="Reklame distance">
             <img src="Reklam3.jpg" alt="LG G6" class="Reklame">
         </aside>
 
         <!--Footer-->
-        <footer class="Footer">
+        <footer class="Footer" role="Contentinfo">
             <!--Delar upp footern-->
             <table class="noBorder">
                 <thead>

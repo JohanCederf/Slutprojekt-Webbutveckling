@@ -7,6 +7,7 @@ body{
     padding: 5px;
 }
 
+
 /*Templet area*/
 .Header { grid-area: header; }
 .Navbar { grid-area: nav;}
@@ -46,6 +47,14 @@ body{
     grid-template-columns: auto;
     padding: 10px;
 }
+
+
+/*Templet phone, GoTTA TO DO
+@media screen and (max-width: 600px){
+   
+}*/
+
+
 
 /*Ta bort... ev storlek*/
 
@@ -107,6 +116,19 @@ div{
     margin-bottom: 210px;
 }
 
+section{
+    background: #06bd9e;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 50px;
+}
+section::after{
+    content: " - Well hope it's right xD";
+    font-size: 1ex;
+    color: black;
+}
+
+
 .Header h3{
     display: grid;
     margin: 20px;
@@ -114,18 +136,23 @@ div{
 
 p.space{
     line-height: 2em;
-    vertical-align: auto;
+    vertical-align: top;
 }
 p.Info{
     font-size: 1ex;
-    vertical-align: auto;
+    vertical-align: bottom;
 }
 h2.Large{
     font-size: 10vmin;
 }
+h4.left{
+    text-align: left;
+    margin-left: 100px;
+}
 
-
-
+section > p, h1 {
+    color: black;
+}
 
 
 
@@ -160,8 +187,6 @@ div.Animation{
     margin-right: auto;
     background-color: #adb;
     position: relative;
-    -webkit-animation-name: example;
-    -webkit-animation-duration: 6s;
     animation-name: example;
     animation-duration: 6s;
     animation-iteration-count: infinite;
@@ -179,7 +204,6 @@ div.Transistion{
     width: 100px;
     height: 100px;
     background: rgb(43,221,201);
-    -webkit-transition: width 4s;
     transition: width 4s;
     margin-left: 100px;
 }
@@ -199,12 +223,12 @@ color: black;
 legend.störreText, label.störreText{
     font-size: 32px;
 }
-input, textarea, select{
+input, textarea, select, option, button{
     color: #000000;
 }
 
 
-/*Tabell spel*/
+/*Tabell Home*/
 table.Collapse{
     border-collapse: collapse;
     margin-left: auto;
@@ -212,6 +236,9 @@ table.Collapse{
     background-color: hsl(167, 81%, 29%);
     margin-bottom: 20px;
 }
+
+
+/*Tabell spel*/
 table.Round{
     border-radius: 28px;
     background-color: hsl(167, 81%, 29%);
@@ -275,12 +302,13 @@ img.reklam{
     margin-bottom: 200px;
 }
 img.Reklame{
-    height: 250;
+    height: 250px;
     width: 400px;
 }
 img.distance{
     margin-bottom: 100px;
 }
+
 
 /*Huvudmeny till alla*/
 a {
@@ -347,4 +375,10 @@ table.noBorder, tr.Rubrik th, tr.Undertext td{
     border: none;
     margin: 0;
     padding: 0;
+}
+td a:link{
+    color: greenyellow;
+}
+td a:visited{
+    color: pink;
 }

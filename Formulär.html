@@ -22,6 +22,7 @@
                 <li><a href="About.html">About</a></li>
             </ul>
         </nav>
+        <!--Huvudinnehåll-->
         <main class="Main" role="main">
             <article>
                 <h2>Lorem ipsum</h2>
@@ -41,15 +42,16 @@
                     <label for="Email">Email</label> <input type="email" name="Email" id="Email" required
                         placeholder="example.extern@gmail.com"><br>
                     <!--begränsa använding av tecken-->
-                    <label for="Password">Lösenord</label> <input type="password" name="Password" id="Password" pattern="[A-Za-z]{3}"
-                        title="Three letter country code"><br>
+                    <label for="Password">Lösenord</label> <input type="password" name="Password" id="Password"
+                        pattern="[A-Za-z]{3}" title="Three letter country code"><br>
                     <label for="Birth">Date of Birth</label> <input type="text" name="Birth" id="Birth"><br>
 
                     <!--Välj ett av alternativen-->
                     <label class="störreText">Kön:</label><br>
                     <input type="radio" name="kön" value="Man" id="Man"><label for="Man">Man</label><br>
                     <input type="radio" name="kön" value="Kvinna" id="Kvinna"><label for="Kvinna">Kvinna</label><br>
-                    <input type="radio" name="kön" value="Något annat" id="Annat"><label for="Annat">Något annat</label><br>
+                    <input type="radio" name="kön" value="Något annat" id="Annat"><label for="Annat">Något
+                        annat</label><br>
 
                     <!--Möjliheten att välja flera alternativ-->
                     <label class="störreText">Vilka spel spelar/ har du spelat</label><br>
@@ -79,6 +81,7 @@
                         <option value="Safari"></option>
                     </datalist><br><br>
 
+                    <!--Vid klick av knappen skicka iväg medellande inom alert()-->
                     <button type="button" onclick="alert('Checking how many would press this button')">Click
                         Me!</button><br><br>
 
@@ -87,10 +90,10 @@
                     <textarea name="Kort info" cols="20" rows="10"
                         readonly>YAYEET om du klickar här kommer all din information hamna i cyberrymden WOWOAOOAW.</textarea><br>
 
-                    <label>Select your favorite color:</label> <input type="color" name="favcolor"
-                        value="#ff0000"><br>
-                    <label>Favorite number</label> <input type="number" name="favNumber" value="0"
-                        step="2"><br><br><br>
+                    <!--Välj färg-->
+                    <label>Select your favorite color:</label> <input type="color" name="favcolor" value="#ff0000"><br>
+                    <!--Välj nummer-->
+                    <label>Favorite number</label> <input type="number" name="favNumber" value="0" step="2"><br><br><br>
 
                     <input type="submit" value="Send" name="Send">
                 </fieldset>

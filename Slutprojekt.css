@@ -49,15 +49,6 @@ body{
 }
 
 
-/*Templet phone, GoTTA TO DO
-@media screen and (max-width: 600px){
-   
-}*/
-
-
-
-/*Ta bort... ev storlek*/
-
 /*Läger upp en bas för innehållet*/
 .grid-container-tre > nav, header, footer, aside, main {
   text-align: center;
@@ -78,20 +69,12 @@ body{
     margin: 0px;
     padding: 0px;
 }
-
 .Navbar {
     padding: 0px;
 }
 
-article {
-    height: auto;
-}
 
-
-
-
-/*Lägg/ändra in höjd, färg, m.m*/
-/*Varje indelad sektion bakgrundsärg, fixat anpassad höjd*/
+/*Varje indelad sektion med höjd*/
 main{
     height: auto;
     background-color: #003D4D;
@@ -111,15 +94,19 @@ aside{
     height: auto;
     background-color: #6D95FA;
 }
+article {
+    height: auto;
+}
 div{
     display:grid;
     margin-bottom: 210px;
 }
 
+/*Section på Home sidan*/
 section{
     background: #06bd9e;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 150px;
+    margin-right: 150px;
     margin-bottom: 50px;
 }
 section::after{
@@ -127,13 +114,22 @@ section::after{
     font-size: 1ex;
     color: black;
 }
+section > p, h1 {
+    color: black;
+}
+h2 a:target{
+    background: #999;
+    border: 2px solid #555;
+}
 
-
+/*Gemensam storlek på alla rubriker i header*/
 .Header h3{
     display: grid;
     margin: 20px;
 }
 
+/*Speciella p och h-taggar*/
+/*Radernas storlek på 2em*/
 p.space{
     line-height: 2em;
     vertical-align: top;
@@ -150,15 +146,8 @@ h4.left{
     margin-left: 100px;
 }
 
-section > p, h1 {
-    color: black;
-}
 
-
-
-/*Ev add all video and Soundtrack under same place....*/
-
-/*Games video/audio*/
+/*Games video/audio/iframe*/
 video{
     display:grid;
     margin-left: auto;
@@ -167,17 +156,16 @@ video{
     height: 400px;
     width: 600px;
 }
-
 audio{
     margin-left: auto;
     margin-right: auto;
     display: block;
 }
-
 iframe{
     width:500px;
     height: 250px;
 }
+
 
 /*Animation*/
 div.Animation{
@@ -191,6 +179,7 @@ div.Animation{
     animation-duration: 6s;
     animation-iteration-count: infinite;
 }
+/*De steg som animationen går igenom*/
 @keyframes example{
     0%{background-color: #adb; left: 0px; top:0px;}
     25%{background-color: #cad; left: 200px; top: 0px;}
@@ -198,6 +187,7 @@ div.Animation{
     75%{background-color: #dca; left: 0px; top: 200px;}
     100%{background-color: #adb; left: 0px; top: 0px;}
 }
+
 
 /*Transistion*/
 div.Transistion{
@@ -207,11 +197,10 @@ div.Transistion{
     transition: width 4s;
     margin-left: 100px;
 }
+/*Förändring som sker när man håller över*/
 div.Transistion:hover{
-    width: 400px;
+    width: 300px;
 }
-
-
 
 
 /*Formulär*/
@@ -257,6 +246,7 @@ th, td {
     font-size: 20px;
     padding: 10px;
 }
+/*Byter färg efter varanan rad*/
 table#t01 tr:nth-child(odd){
     background-color: rgba(0, 155, 44, 0.6);
 }
@@ -270,6 +260,7 @@ dl{
     text-align: left;
     margin-left: 100px;
 }
+
 
 /*Topplista*/
 img, ol.Topplista{
@@ -287,6 +278,7 @@ ol.Topplista{
 ol li{
     text-align: left;
 }
+/*Tar bort så att elementet inte räknas med i listan*/
 .None{
     list-style-type: none;
 }
@@ -294,6 +286,7 @@ ol li{
 	font-size: 23px;
 	color: #EEEEEE;
 }
+
 
 /*Reklam*/
 img.reklam{
@@ -325,6 +318,7 @@ nav ul {
 	padding: 0;
     margin: 0;
 }
+/*Gör menyn horisontell*/
 ul li {
 	margin: 0;
 	padding: 0;
@@ -334,6 +328,7 @@ ul li {
 .active {
 	background-color: rgb(109, 95, 95);
 }
+/*Om du håller över en som inte har taggen .active ge dem färgen #111;*/
 li a:hover:not(.active) {
 	background-color: #111111;
 }
@@ -343,6 +338,7 @@ li a:focus {
 li a {
 	padding: 14px 16px;
 }
+
 
 /*Lokal meny*/
 nav#vertikal{
@@ -361,7 +357,8 @@ nav#vertikal ul{
     height: 100%;
 }
 
-/*Footer*/
+
+/*Footer, med tabell för strukturering*/
 .Footer{
 	display:grid;
 }
@@ -382,3 +379,80 @@ td a:link{
 td a:visited{
     color: pink;
 }
+
+
+/*Templet phone*/
+@media screen and (max-width: 600px){
+    /*Tvåspaltlayout blir enspalt*/
+    .grid-container-två{
+        display:grid;
+        grid-template-areas: 
+        'header'
+        'nav'
+        'main'
+        'footer';
+        grid-template-rows: auto;
+    }
+
+    /*Tar bort all "reklam"*/
+    aside{
+        display:none;
+    }
+ 
+    /*Ändring av tabell storlek för att få plats*/
+    table{
+        width: 60px;
+    }
+    tr.Rubrik th, tr.Undertext td{
+        font-size: 12px;
+    }
+    th, td{
+        font-size: 10px;
+    }
+
+    /*Ändring för att section ska få plats*/
+    section{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    /*Läger animationen och transistion längst till vänster*/
+    div.Transistion, div.Animation{
+        margin-left: 0px;
+    }
+
+    /*varje meny ska ha en ul-tagg per rad*/
+    .Navbar ul{
+        grid-template-columns: 1fr;
+    }
+
+    /*Trespaltlayout blir enspalt*/
+    .grid-container-tre{
+        display:grid;
+        grid-template-areas:
+            'header'
+            'nav'
+            'Lokalnav'
+            'main'
+            'footer';
+        grid-template-rows: auto;
+        grid-template-columns: 1fr; 
+    }
+
+    /*ändring av bild/video/iframe storlek*/
+    img{
+        width:250px;
+        height: 130px;
+    }
+    video, iframe{
+        margin-left: auto;
+        margin-right: auto;
+        width: 300px;
+        height: 130px;
+    }
+
+    /*Diskriktionlisten lägs till vänster samt h4 rubriken*/
+    dl, h4.left{
+        margin-left: 0px;
+    }
+ }
